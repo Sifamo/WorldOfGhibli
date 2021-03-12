@@ -1,0 +1,13 @@
+<div class="container">
+    <img
+        class="demo-bg"
+        src="/assets/filmCovers/Arrietty.jpg"
+        alt=""
+    >
+    <a *ngFor="let film of films" class="film" (mouseover)="changeStyle($event)" routerLink="/detail/{{film.id}}">
+        <img
+            src="/assets/filmCovers/{{film.cover}}.jpg"
+            alt="{{film.cover}}"
+        >        
+    </a>
+</div>
