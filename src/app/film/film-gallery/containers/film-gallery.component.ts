@@ -10,14 +10,12 @@ import { Film } from 'src/app/Model/film';
 export class FilmGalleryComponent implements OnInit {
 
   films: Film[];
-
   constructor(private galleryService: GalleryService) { }
 
   ngOnInit(): void {
     this.getFilms();
   }
 
-  container=""
 
   getFilms(): void {
     this.galleryService.getFilms()

@@ -1,0 +1,13 @@
+<div class="all">
+    <button class="btn btn-primary btn-lg back" (click)="goback()">Go back</button>
+    <div class="container">
+        
+            <app-contribution-form [countries]= "countries" (formEmitter)="fanSubmition($event)"></app-contribution-form>
+          
+        
+            <app-contributions [contributions]="contributions"></app-contributions>
+         
+    </div>
+        <button class="btn btn-primary btn-lg back" routerLink="/gallery">Go to the Gallery</button>
+
+</div>

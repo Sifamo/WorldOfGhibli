@@ -1,0 +1,8 @@
+<div class="container">
+    <button class="btn btn-primary btn-lg back" routerLink="/memorial">Got history with the studio ? we'd love to hear your story </button>
+    <div class="gallery">
+        <a *ngFor="let film of films" class="film" routerLink="/detail/{{film.id}}">
+            <app-film-list [film]="film"></app-film-list>
+        </a>
+    </div>
+</div>

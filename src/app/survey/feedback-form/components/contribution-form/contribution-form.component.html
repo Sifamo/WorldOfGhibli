@@ -1,0 +1,37 @@
+<div class="form-container">
+    <h1 class="headline">Share your thoughts!</h1>
+    <form #fanForm="ngForm" (ngSubmit)="fanSubmition(fanForm)">
+        <fieldset class="infos">
+            <legend>Your personal Infos:</legend>
+            <div class="mb-3">
+                <label for="nickname" class="form-label">What should we call you ?</label>
+                <input type="text" class="form-control" id="nickname" placeholder="Nickname" ngModel name="nickname" required>
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">How old are you ?</label>
+                <input type="text" class="form-control" id="age" placeholder="Age" ngModel name="age" required>
+            </div>
+            <div>
+                <label for="countries" class="form-label">Where are you from ?</label>
+                <select class="form-select" aria-label="Default select example" name="countryName" id="countries" ngModel>
+                    <option selected>Select a country</option>
+                    <option *ngFor="let country of countries" value="{{country.name}}">{{country.name}}</option>
+                </select>
+            </div>
+            
+        </fieldset>
+        <fieldset class="shared">
+            <legend>The "Keyboard" is yours, type away!</legend>
+            <div class="mb-3">
+                <label for="memory" class="form-label">What's your fondest memory with Studio Ghibli ?</label>
+                <textarea class="form-control" id="memory" rows="3" name="memory" maxlength="70" placeholder="Your memory" ngModel></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">What would you like to say to Hayao Miyazaki ?</label>
+                <textarea class="form-control" name="message" id="message" rows="3" name="message" maxlength="70" placeholder="Your message" ngModel></textarea>
+            </div>
+        </fieldset>
+        
+        <button [disabled]="fanForm.invalid" type="submit" class="btn btn-dark" >Contribute!</button>
+    </form>
+</div>

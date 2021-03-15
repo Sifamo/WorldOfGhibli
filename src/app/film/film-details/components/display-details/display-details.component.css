@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    top: 10vh;
+    width: auto;
+    flex-direction: row-reverse;
+    background-color: rgba(213,221,243,.9);
+    border-radius: 8px;
+    padding-top: 10px;
+}
+
+.detail {
+    text-align: left;
+    width: 65vw;
+    height: fit-content;
+    padding: 5%;
+    padding-top:0;
+    margin: 5px;    
+}
+
+img{
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 12vh;
+    font-size: 3em
+}
+
+p{
+    font-size: 2em
+}

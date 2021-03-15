@@ -1,0 +1,16 @@
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 5vh;
+    align-self: center;
+    margin-right: 40px;
+    background-color: rgba(213,221,243,.9);
+    color: black
+}
+
+button:hover {
+    background-color: rgba(213,221,243,1);
+}

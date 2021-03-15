@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 52vw;
+    margin: auto;
+    padding: 0;
+    background-color: rgba(213,221,243,.5);
+}
+
+.film {
+    text-decoration: none;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+    transition: 0.5s;
+    margin:5px;
+    border-radius: 5px;
+}
+
+.film:hover {
+    box-shadow: 0 0 16px 0 rgba(0,0,0,1);
+    transform: scale(1.3);
+}
+
+.back {
+    background-color: rgba(213,221,243,1);
+    color: black;
+    width:20em;
+}
+
+.back:hover {
+    background-color: rgba(213,221,243,1);
+}
+    
+
+
+

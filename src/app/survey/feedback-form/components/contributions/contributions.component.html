@@ -1,0 +1,8 @@
+<div class="post-container">
+    <div *ngFor="let contribution of contributions" class="contribution">
+        <h5>{{contribution.nickname}}</h5>
+        <h6>{{contribution.age}}, {{contribution.countryName}}</h6>
+        <p>{{contribution.memory}}</p>
+        <p>{{contribution.message}}</p>
+    </div>
+</div>

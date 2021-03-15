@@ -33,4 +33,7 @@ export class FilmDetailsComponent implements OnInit {
       console.log(film)});
   }
 
+  goback() {
+    this.location.back();
+  }
 }
